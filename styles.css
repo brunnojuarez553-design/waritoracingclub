@@ -8,3 +8,35 @@
 /* Original WRC identity in navigation */
 .brand-logo{display:block;width:54px;height:54px;object-fit:contain;flex-shrink:0;border-radius:50%}
 @media(max-width:560px){.brand-logo{width:43px;height:43px}.brand{gap:8px}}
+
+/* Footer editorial premium — WRC */
+.footer{position:relative;overflow:hidden;background:#0c0e10;border-top:1px solid rgba(255,90,10,.42);padding:0;color:#f4f4f2}
+.footer::before{content:"";position:absolute;inset:0 0 auto;height:360px;pointer-events:none;background:radial-gradient(ellipse at 78% 0%,rgba(255,90,10,.085),transparent 60%)}
+.footer>.wrap{position:relative}
+.footer-intro{display:flex;justify-content:space-between;align-items:end;gap:36px;padding:90px 0 72px}
+.footer-overline{display:flex;align-items:center;gap:12px;font-size:10px;font-weight:700;letter-spacing:2.2px;color:#c2c4c5}
+.footer-signal{height:7px;width:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 15px rgba(255,90,10,.65)}
+.footer-intro h2{font-size:clamp(62px,7.4vw,124px);line-height:.88;letter-spacing:-1px;margin:25px 0 0}
+.footer-intro h2 em{color:var(--orange);font-style:normal}
+.footer-cta{display:flex;align-items:center;justify-content:space-between;gap:26px;min-width:260px;min-height:66px;padding:0 0 0 22px;border:1px solid rgba(255,255,255,.3);font-size:10px;font-weight:700;letter-spacing:1.1px;transition:border-color .25s,background .25s}
+.footer-cta:hover{border-color:var(--orange);background:#ff5a0a12}
+.footer-cta-arrow{display:grid;place-items:center;align-self:stretch;width:65px;background:var(--orange);color:#090a0b;font-size:24px}
+.footer-rule{height:1px;background:linear-gradient(90deg,var(--orange),rgba(255,255,255,.15) 35%,rgba(255,255,255,.1))}
+.footer-main{display:grid;grid-template-columns:minmax(240px,1.65fr) repeat(3,minmax(125px,1fr));gap:clamp(25px,4vw,75px);padding:70px 0 80px}
+.footer-wordmark{display:inline-block;font:900 clamp(85px,9vw,148px)/.78 "Barlow Condensed",Impact,sans-serif;letter-spacing:-5px}
+.footer-wordmark span{color:var(--orange)}
+.footer-identity>p{max-width:285px;margin:30px 0 28px;font-size:13px;line-height:1.8;color:#a5a8aa}
+.footer-social{display:flex;flex-wrap:wrap;gap:20px}
+.footer-social a{font-size:10px;letter-spacing:1.3px;font-weight:700}
+.footer-social a span{color:var(--orange)}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:17px}
+.footer-column h3{font:700 11px "DM Sans",sans-serif;letter-spacing:1.8px;color:var(--orange);margin:0 0 12px}
+.footer-column a,.footer-column p{font-size:12px;color:#b4b6b8;line-height:1.5;margin:0;transition:color .2s}
+.footer-column a:hover,.footer-social a:hover,.footer-bottom a:hover{color:var(--orange)}
+.footer-contact .footer-phone{font:700 22px "Barlow Condensed",sans-serif;color:#f4f4f2;letter-spacing:.2px}
+.footer-contact .footer-contact-link{margin-top:9px;border-bottom:1px solid var(--orange);padding-bottom:8px;color:#f4f4f2;font-size:10px;letter-spacing:1px;font-weight:700}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid rgba(255,255,255,.12);margin:0;padding:27px 0 30px;color:#85898c;font-size:9px;letter-spacing:1.1px;line-height:1.6}
+.footer-bottom a{color:#d8dadb;white-space:nowrap;transition:color .2s}
+@media(max-width:1100px){.footer-main{grid-template-columns:1.5fr 1fr 1fr;row-gap:45px}.footer-contact{grid-column:2 / 4}.footer-intro{align-items:start;flex-direction:column}.footer-cta{align-self:flex-start}}
+@media(max-width:700px){.footer-intro{padding:65px 0 50px;gap:35px}.footer-intro h2{font-size:clamp(56px,11vw,85px)}.footer-overline{font-size:9px;letter-spacing:1.2px}.footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:43px 20px;padding:52px 0}.footer-identity{grid-column:1/-1}.footer-contact{grid-column:auto}.footer-wordmark{font-size:100px}.footer-identity>p{margin:23px 0}.footer-bottom{flex-wrap:wrap;justify-content:space-between;gap:12px}.footer-bottom span:last-child{width:100%}}
+@media(max-width:420px){.footer-intro h2{font-size:clamp(48px,12.2vw,62px)}.footer-cta{width:100%;min-width:0;font-size:9px}.footer-main{grid-template-columns:1fr 1fr;column-gap:16px}.footer-column a,.footer-column p{font-size:11px}.footer-contact{grid-column:1/-1}.footer-bottom{font-size:8px}.footer-bottom span:first-child{max-width:65%}}
